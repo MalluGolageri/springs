@@ -18,8 +18,6 @@ public class EmployeeConfig {
 
     private String id;
 
-    private DepartmentConfig departmentConfig;
-
     public String getName() {
         return name;
     }

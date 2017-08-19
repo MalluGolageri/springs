@@ -1,2 +1,6 @@
-com/mallu/springs/beans/Employee.class
+com/mallu/springs/beans/EmployeeConfig.class
+com/mallu/springs/beans/DepartmentConfig.class
+com/mallu/springs/beans/Department.class
 com/mallu/springs/App.class
+com/mallu/springs/beans/MyApplicationContextAware.class
+com/mallu/springs/beans/Employee.class

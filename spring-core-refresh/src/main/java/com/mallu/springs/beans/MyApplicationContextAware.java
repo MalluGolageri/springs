@@ -11,13 +11,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyApplicationContextAware implements ApplicationContextAware {
 
-    private ApplicationContext applicationContext = null;
+    private static ApplicationContext applicationContext = null;
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext=applicationContext;
     }
 
-    public ApplicationContext getContext(){
-        return this.applicationContext;
+    public static ApplicationContext getContext(){
+        return applicationContext;
     }
 
 }

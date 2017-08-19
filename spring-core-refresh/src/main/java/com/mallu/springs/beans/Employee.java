@@ -20,6 +20,9 @@ public class Employee {
 
     private Department department;
 
+    @Autowired
+    private EmployeeConfig employeeConfig;
+
     public String getName() {
         return name;
     }
@@ -33,6 +36,7 @@ public class Employee {
         return id;
     }
 
+    @Value(value = "RaviId")
     public void setId(String id) {
         this.id = id;
     }
@@ -48,6 +52,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return getName() + " belongs to "+getDepartment();
+        return employeeConfig.getName() + " belongs to "+getDepartment();
     }
 }
